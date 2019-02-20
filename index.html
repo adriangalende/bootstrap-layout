@@ -1,10 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-</body>
+    <title>Bootstrap layout</title>
+
+	  <link href="css/bootstrap.min.css" rel="stylesheet">
+	  <link rel="stylesheet" href="https://use.fontawesome.com/e1a4235157.css">
+	  <link href="css/style.css" rel="stylesheet">
+
+  </head>
+  <body>
+
+  <div class="container-fluid">
+	  <header class="row">
+		  <div class="col-md-12">
+			  <nav class="navbar navbar-toggleable-md navbar-inverse fixed-top bg-inverse d-flex flex-wrap">
+				  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+					  <span class="navbar-toggler-icon"></span>
+				  </button>
+				  <div class="flex-nowrap col-2 p-4 text-center bg-danger">
+					  <a class="navbar-brand h2" href="#">LOGO</a>
+				  </div>
+				  <h1 class="text-info col-4"> NOMBRE TIENDA </h1>
+				  <form class="form-inline my-2 my-lg-0 justify-content-end col-4">
+					  <input class="form-control mr-sm-2" type="text" placeholder="Search">
+					  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+				  </form>
+
+				  <i class="fa fa-user fa-2x text-white ml-5 mr-4"></i>
+				  <i class="fa fa-shopping-cart fa-2x text-white mr-4"><span class="badge-pill badge-danger">2</span></i>
+				  <div class="navbar col-12" id="navbar-menu">
+
+				  <ul class="navbar-nav mr-auto justify-content-center w-100 h4">
+					  <li class="nav-item active">
+						  <a class="nav-link" href="#">INICIO <span class="sr-only">(current)</span></a>
+					  </li>
+					  <li class="nav-item">
+						  <a class="nav-link" href="#">COMPONENTES <span class="sr-only">(current)</span></a>
+					  </li>
+					  <li class="nav-item">
+						  <a class="nav-link" href="#">PERIFÉRICOS <span class="sr-only">(current)</span></a>
+					  </li>
+					  <li class="nav-item">
+						  <a class="nav-link" href="#">GAMING <span class="sr-only">(current)</span></a>
+					  </li>
+					  <li class="nav-item">
+						  <a class="nav-link" href="#">ORDENADORES <span class="sr-only">(current)</span></a>
+					  </li>
+
+					  <!--<li class="nav-item dropdown">-->
+					  <!--<a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>-->
+					  <!--<div class="dropdown-menu" aria-labelledby="dropdown01">-->
+					  <!--<a class="dropdown-item" href="#">Action</a>-->
+					  <!--<a class="dropdown-item" href="#">Another action</a>-->
+					  <!--<a class="dropdown-item" href="#">Something else here</a>-->
+					  <!--</div>-->
+					  <!--</li>-->
+				  </ul>
+			  </div>
+			  </nav>
+		  </div>
+	  </header>
+	  <main class="d-flex col-12">
+		  <nav>
+			  <ol class="breadcrumb bg-red">
+				  <li class="breadcrumb-item">
+					  <a href="#">Home</a>
+				  </li>
+				  <li class="breadcrumb-item">
+					  <a href="#">Library</a>
+				  </li>
+				  <li class="breadcrumb-item active">
+					  Data
+				  </li>
+			  </ol>
+		  </nav>
+	  </main>
+  </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
 </html>
