@@ -10,6 +10,9 @@
 	  <link href="css/bootstrap.min.css" rel="stylesheet">
 	  <link rel="stylesheet" href="https://use.fontawesome.com/e1a4235157.css">
 	  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	  <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+			  integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+			  crossorigin=""></script>
 	  <link href="css/style.css" rel="stylesheet">
 
   </head>
@@ -35,33 +38,34 @@
 				  <i class="fa fa-shopping-cart fa-2x text-white mr-4"><span class="badge-pill badge-danger badge-items Lato">2</span></i>
 				  <div class="navbar col-12" id="navbar-menu">
 
-				  <ul class="navbar-nav mr-auto justify-content-center w-100 h4">
-					  <li class="nav-item active">
-						  <a class="nav-link" href="#">INICIO <span class="sr-only">(current)</span></a>
-					  </li>
-					  <li class="nav-item">
-						  <a class="nav-link" href="#">COMPONENTES <span class="sr-only">(current)</span></a>
-					  </li>
-					  <li class="nav-item">
-						  <a class="nav-link" href="#">PERIFÉRICOS <span class="sr-only">(current)</span></a>
-					  </li>
-					  <li class="nav-item">
-						  <a class="nav-link" href="#">GAMING <span class="sr-only">(current)</span></a>
-					  </li>
-					  <li class="nav-item">
-						  <a class="nav-link" href="#">ORDENADORES <span class="sr-only">(current)</span></a>
-					  </li>
+					  <ul class="navbar-nav mr-auto justify-content-center w-100 h4">
+						  <li class="nav-item active">
+							  <a class="nav-link" href="#">INICIO <span class="sr-only">(current)</span></a>
+						  </li>
+						  <li class="nav-item">
+							  <a class="nav-link" href="#">COMPONENTES <span class="sr-only">(current)</span></a>
+						  </li>
+						  <li class="nav-item">
+							  <a class="nav-link" href="#">PERIFÉRICOS <span class="sr-only">(current)</span></a>
+						  </li>
+						  <li class="nav-item dropdown">
+							  <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">GAMING</a>
+							  <div class="dropdown-menu" aria-labelledby="dropdown01">
+								  <a class="dropdown-item gris-oscuroi" href="#">RATONES</a>
+								  <a class="dropdown-item" href="#">TECLADOS</a>
+								  <a class="dropdown-item" href="#">MONITORES</a>
+								  <a class="dropdown-item" href="#">AURICULARES</a>
+								  <a class="dropdown-item" href="#">SILLAS</a>
+								  <a class="dropdown-item" href="#">MATERIAL</a>
+							  </div>
+						  </li>
+						  <li class="nav-item">
+							  <a class="nav-link" href="#">ORDENADORES <span class="sr-only">(current)</span></a>
+						  </li>
 
-					  <!--<li class="nav-item dropdown">-->
-					  <!--<a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>-->
-					  <!--<div class="dropdown-menu" aria-labelledby="dropdown01">-->
-					  <!--<a class="dropdown-item" href="#">Action</a>-->
-					  <!--<a class="dropdown-item" href="#">Another action</a>-->
-					  <!--<a class="dropdown-item" href="#">Something else here</a>-->
-					  <!--</div>-->
-					  <!--</li>-->
-				  </ul>
-			  </div>
+
+					  </ul>
+				  </div>
 			  </nav>
 		  </div>
 	  </header>
@@ -87,7 +91,7 @@
 					  </ol>
 					  <div class="carousel-inner">
 						  <div class="carousel-item active">
-							  <img class="d-block w-100" alt="Carousel Bootstrap First" src="https://www.layoutit.com/img/sports-q-c-1600-500-1.jpg" />
+							  <img class="d-block w-100" alt="Carousel Bootstrap First" src="https://www.layoutit.com/img/sports-q-c-1600-500-1.jpg">
 							  <div class="carousel-caption">
 								  <h4>
 									  First Thumbnail label
@@ -98,7 +102,7 @@
 							  </div>
 						  </div>
 						  <div class="carousel-item">
-							  <img class="d-block w-100" alt="Carousel Bootstrap Second" src="https://www.layoutit.com/img/sports-q-c-1600-500-2.jpg" />
+							  <img class="d-block w-100" alt="Carousel Bootstrap Second" src="https://www.layoutit.com/img/sports-q-c-1600-500-2.jpg">
 							  <div class="carousel-caption">
 								  <h4>
 									  Second Thumbnail label
@@ -109,7 +113,7 @@
 							  </div>
 						  </div>
 						  <div class="carousel-item">
-							  <img class="d-block w-100" alt="Carousel Bootstrap Third" src="https://www.layoutit.com/img/sports-q-c-1600-500-3.jpg" />
+							  <img class="d-block w-100" alt="Carousel Bootstrap Third" src="https://www.layoutit.com/img/sports-q-c-1600-500-3.jpg">
 							  <div class="carousel-caption">
 								  <h4>
 									  Third Thumbnail label
@@ -136,8 +140,8 @@
 					  <div class="card-body justify-items-center">
 						  <h5 class="card-title">Nombre Artículo</h5>
 						  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-						  <p class="card-text text-danger underline">288 &euro;</p>
-						  <p class="card-text font-weight-bold price">288 &euro;</p>
+						  <p class="card-text text-danger underline">288 €</p>
+						  <p class="card-text font-weight-bold price">288 €</p>
 						  <a href="#" class="btn btn-primary mb-2">Comprar</a>
 					  </div>
 				  </div>
@@ -149,8 +153,8 @@
 					  <div class="card-body justify-items-center">
 						  <h5 class="card-title">Nombre Artículo</h5>
 						  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-						  <p class="card-text text-danger underline">288 &euro;</p>
-						  <p class="card-text font-weight-bold price">288 &euro;</p>
+						  <p class="card-text text-danger underline">288 €</p>
+						  <p class="card-text font-weight-bold price">288 €</p>
 						  <a href="#" class="btn btn-primary mb-2">Comprar</a>
 					  </div>
 				  </div>
@@ -162,8 +166,8 @@
 					  <div class="card-body justify-items-center">
 						  <h5 class="card-title">Nombre Artículo</h5>
 						  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-						  <p class="card-text text-danger underline">288 &euro;</p>
-						  <p class="card-text font-weight-bold price">288 &euro;</p>
+						  <p class="card-text text-danger underline">288 €</p>
+						  <p class="card-text font-weight-bold price">288 €</p>
 						  <a href="#" class="btn btn-primary mb-2">Comprar</a>
 					  </div>
 				  </div>
@@ -175,8 +179,8 @@
 					  <div class="card-body justify-items-center">
 						  <h5 class="card-title">Nombre Artículo</h5>
 						  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-						  <p class="card-text text-danger underline">288 &euro;</p>
-						  <p class="card-text font-weight-bold price">288 &euro;</p>
+						  <p class="card-text text-danger underline">288 €</p>
+						  <p class="card-text font-weight-bold price">288 €</p>
 						  <a href="#" class="btn btn-primary mb-2">Comprar</a>
 					  </div>
 				  </div>
@@ -199,10 +203,10 @@
 					  <div class="card-body p-2 texto-gris-claro">
 						  <i class="fa fa-truck icono-beneficios texto-gris-claro"></i>
 						  <div class="card-title h2  font-weight-bold Lato">ENTREGA</div>
-						<p class="card-text Lato texto-gris-claro font-weight-bold">
-							Asegurada contra robos,
-							pérdidas o daños.
-						</p>
+						  <p class="card-text Lato texto-gris-claro font-weight-bold">
+							  Asegurada contra robos,
+							  pérdidas o daños.
+						  </p>
 					  </div>
 				  </div>
 				  <div class="card text-center m-3 bg-none">
@@ -225,12 +229,51 @@
 				  </div>
 			  </div>
 
+			  <div class="row nosotros gris-oscuro justify-content-center">
+				  <div class="col-3">
+					  <div class="card-body p-2 texto-gris-claro mt-3">
+						  <div class="card-title h4 font-weight-bold Lato">Sobre nosotros</div>
+						  <ul>
+							  <li class="card-text Lato texto-gris-claro font-weight-bold"> Quiénes somos</li>
+							  <li class="card-text Lato texto-gris-claro font-weight-bold"> Equipo</li>
+							  <li class="card-text Lato texto-gris-claro font-weight-bold"> Política de cookies</li>
+							  <li class="card-text Lato texto-gris-claro font-weight-bold"> Política privacidad</li>
+						  </ul>
+					  </div>
+				  </div>
+				  <div class="col-5">
+					  <div class="card-body p-2 texto-gris-claro mt-3">
+						  <div class="card-title h4 font-weight-bold Lato"><span class="fa fa-map"></span> ¿ Dónde estamos ?</div>
+						  <div id="myMap" class="leaflet-container leaflet-touch leaflet-fade-anim leaflet-grab leaflet-touch-drag leaflet-touch-zoom" tabindex="0" style="position: relative;"><div class="leaflet-pane leaflet-map-pane" style="transform: translate3d(0px, 0px, 0px);"><div class="leaflet-pane leaflet-tile-pane"><div class="leaflet-layer " style="z-index: 1; opacity: 1;"><div class="leaflet-tile-container leaflet-zoom-animated" style="z-index: 16; transform: translate3d(-624px, -272px, 0px) scale(4);"></div><div class="leaflet-tile-container leaflet-zoom-animated" style="z-index: 18; transform: translate3d(0px, 0px, 0px) scale(1);"><img alt="" role="presentation" src="https://api.tiles.mapbox.com/v4/mapbox.streets/15/16374/10894.png?access_token=pk.eyJ1IjoiYWdhbGVuZGUiLCJhIjoiY2pzZXp2aWtoMGE3NjQ0bzJ0cmZvdGhzYiJ9.C_2fZGDSvc1u95gmp2Bf2Q" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(72px, -248px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://api.tiles.mapbox.com/v4/mapbox.streets/15/16374/10895.png?access_token=pk.eyJ1IjoiYWdhbGVuZGUiLCJhIjoiY2pzZXp2aWtoMGE3NjQ0bzJ0cmZvdGhzYiJ9.C_2fZGDSvc1u95gmp2Bf2Q" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(72px, 8px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://api.tiles.mapbox.com/v4/mapbox.streets/15/16373/10894.png?access_token=pk.eyJ1IjoiYWdhbGVuZGUiLCJhIjoiY2pzZXp2aWtoMGE3NjQ0bzJ0cmZvdGhzYiJ9.C_2fZGDSvc1u95gmp2Bf2Q" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-184px, -248px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://api.tiles.mapbox.com/v4/mapbox.streets/15/16375/10894.png?access_token=pk.eyJ1IjoiYWdhbGVuZGUiLCJhIjoiY2pzZXp2aWtoMGE3NjQ0bzJ0cmZvdGhzYiJ9.C_2fZGDSvc1u95gmp2Bf2Q" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(328px, -248px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://api.tiles.mapbox.com/v4/mapbox.streets/15/16373/10895.png?access_token=pk.eyJ1IjoiYWdhbGVuZGUiLCJhIjoiY2pzZXp2aWtoMGE3NjQ0bzJ0cmZvdGhzYiJ9.C_2fZGDSvc1u95gmp2Bf2Q" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-184px, 8px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://api.tiles.mapbox.com/v4/mapbox.streets/15/16375/10895.png?access_token=pk.eyJ1IjoiYWdhbGVuZGUiLCJhIjoiY2pzZXp2aWtoMGE3NjQ0bzJ0cmZvdGhzYiJ9.C_2fZGDSvc1u95gmp2Bf2Q" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(328px, 8px, 0px); opacity: 1;"></div></div></div><div class="leaflet-pane leaflet-shadow-pane"></div><div class="leaflet-pane leaflet-overlay-pane"></div><div class="leaflet-pane leaflet-marker-pane"></div><div class="leaflet-pane leaflet-tooltip-pane"></div><div class="leaflet-pane leaflet-popup-pane"></div><div class="leaflet-proxy leaflet-zoom-animated" style="transform: translate3d(4.19186e+06px, 2.7892e+06px, 0px) scale(16384);"></div></div><div class="leaflet-control-container"><div class="leaflet-top leaflet-left"><div class="leaflet-control-zoom leaflet-bar leaflet-control"><a class="leaflet-control-zoom-in" href="#" title="Zoom in" role="button" aria-label="Zoom in">+</a><a class="leaflet-control-zoom-out" href="#" title="Zoom out" role="button" aria-label="Zoom out">−</a></div></div><div class="leaflet-top leaflet-right"></div><div class="leaflet-bottom leaflet-left"></div><div class="leaflet-bottom leaflet-right"><div class="leaflet-control-attribution leaflet-control"><a href="http://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> | Map data © <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a></div></div></div></div>
+					  </div>
+				  </div>
+				  <div class="col-4">
+					  <div class="card-body p-2 texto-gris-claro mt-3">
+						  <div class="card-title h4 font-weight-bold Lato">Ofertas y promos</div>
+						  <p class="card-text Lato texto-gris-claro font-weight-bold"> Suscribete ahora y mantente informado de todas nuestras ofertas exclusivas!</p>
+						  <form>
+							  <div class="form-group m-0 suscribete Lato font-weight-bold">
+								  <input placeholder="Introduce tu email">
+								  <button class="btn-primary">Enviar</button>
+
+							  </div>
+						  </form>
+					  </div>
+				  </div>
+			  </div>
 		  </div>
 	  </main>
+	  <footer class="d-flex footer gris-footer">
+		  <p class="p-3 texto-gris-claro font-weight-bold Lato col-4"> nombre de tu tienda 2019, ningún derecho reservado</p>
+		  <div class="d-flex cards col-8 justify-content-end"><img src="./img/cards.png" alt="credit cards"></div>
+	  </footer>
   </div>
 
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/scripts.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+		integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+		crossorigin=""/>
+    <script src="./js/scripts.js"></script>
   </body>
 </html>

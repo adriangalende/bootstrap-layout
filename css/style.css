@@ -102,7 +102,7 @@ main {
     width: 113%;
 }
 
-.beneficios {
+.beneficios, .nosotros {
     width: 100%;
     min-height: 250px;
 }
@@ -113,4 +113,40 @@ main {
 
 .icono-beneficios{
     font-size: 6em;
+}
+
+.card-body ul {
+    list-style: none;
+}
+
+.suscribete {
+    margin: 0 !important;
+    display: flex;
+    width: 259px;
+    height: 50px;
+}
+
+.suscribete button{
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    border:none;
+    padding: 14px;
+}
+
+.suscribete input{
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    border: none;
+    padding: 5px;
+}
+
+#myMap { height: 180px; }
+
+footer{
+    width: 100%;
+    height: 60px;
+}
+
+footer .cards{
+    place-self: flex-end;
 }
