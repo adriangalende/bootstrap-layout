@@ -1,0 +1,112 @@
+body{
+    display:flex;
+    justify-content: center;
+    margin-left: 120px;
+    margin-right:120px;
+    font-family: Calibri;
+}
+
+.gris-logo{
+    background-color: #dbdbdd;
+}
+
+.gris-footer{
+  background-color: #4a4c57;
+}
+
+.gris-background{
+    background-color: #b2b2b2;
+}
+
+.gris-carousel-background{
+    background-color: #474c55;
+}
+
+.gris-oscuro{
+    background-color:#272c33;
+}
+
+.azul-breadcrumbs {
+    background-color: #7c88a9;
+}
+
+.texto-gris-oscuro{
+    color:#272c33 !important;
+}
+
+.texto-gris-claro{
+    color:#bcbcbc;
+}
+
+
+.Lato{
+    font-family: Lato;
+}
+
+.badge-offer, .badge-category {
+    display: flex;
+    height: 30px;
+    position: absolute;
+    border-radius: 0;
+    align-items: center;
+    font-size: 22px;
+    font-family: Lato;
+}
+
+.badge-items{
+    font-size: 9px;
+    border-radius: 20px;
+    padding: 8px;
+    position: relative;
+    top: -21px;
+    left: -8px;
+    font-weight: bolder;
+}
+
+.badge-category{
+    background-color:#000000;
+    color: #fff;
+    place-self: flex-end;
+}
+
+.price {
+    font-size: 30px;
+    font-family: Lato;
+    font-weight: bolder;
+}
+
+main {
+    background-color: #363636;
+}
+
+.carousel-inner {
+    width: 100%;
+    height: 340px;
+}
+
+.underline{
+    font-size: 25px;
+    text-decoration: line-through;
+}
+
+#navbar-menu{
+    display: flex;
+}
+
+.publi img{
+    max-width: 347px;
+    width: 113%;
+}
+
+.beneficios {
+    width: 100%;
+    height: 250px;
+}
+
+.card img {
+    max-width: 250px;
+}
+
+.icono-beneficios{
+    font-size: 200px;
+}
