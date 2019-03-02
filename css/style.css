@@ -10,6 +10,21 @@ body{
     border: none;
 }
 
+.btn-primary{
+    background-color: #292B35 !important;
+    color:#fff;
+    border: none;
+}
+
+.rojo-etiqueta{
+    background-color: #953F36;
+    color: #fff;
+}
+
+.amarillo-estrella{
+    background-color: #959336;
+}
+
 .gris-logo{
     background-color: #dbdbdd;
 }
@@ -42,6 +57,9 @@ body{
     color:#bcbcbc;
 }
 
+.texto-estrella {
+    color:#959336;
+}
 a.active{
     background-color:#bcbcbc;
     color:#272c33;
@@ -169,14 +187,26 @@ footer .cards{
 
 .titulo-producto{
     display: flex;
-    justify-content: center;
     position: absolute;
-    top: calc(50% - 12px);
-    bottom: 0;
-    left: 0;
-    right: 0;
+    padding: 1px;
+    background-color: #4b505836;
+    line-height: 229px;
+    width: 92%;
+    margin: 10px;
+    justify-content: center;
 }
 
 .titulo-producto a{
     text-decoration: none;
+}
+
+.card{
+    border: 1px solid #474c55;
+}
+
+
+#logos img{
+    max-width: 200px;
+    margin-left: 40px;
+    filter: brightness(0) invert(1);
 }
