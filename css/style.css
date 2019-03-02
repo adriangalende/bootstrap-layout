@@ -42,6 +42,15 @@ body{
     color:#bcbcbc;
 }
 
+a.active{
+    background-color:#bcbcbc;
+    color:#272c33;
+}
+
+.breadcrumb-item a {
+    letter-spacing: 2px;
+    text-decoration: none;
+}
 
 .Lato{
     font-family: Lato;
@@ -109,6 +118,7 @@ main {
 .beneficios, .nosotros {
     width: 100%;
     min-height: 250px;
+    margin: 0 auto;
 }
 
 .card img {
@@ -153,4 +163,20 @@ footer{
 
 footer .cards{
     place-self: flex-end;
+}
+
+/* Categorias / Productos */
+
+.titulo-producto{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: calc(50% - 12px);
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.titulo-producto a{
+    text-decoration: none;
 }
