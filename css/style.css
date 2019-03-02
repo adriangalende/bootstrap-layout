@@ -97,6 +97,10 @@ main {
     display: flex;
 }
 
+.dropdown-menu{
+    font-size: 1em;
+}
+
 .publi img{
     max-width: 347px;
     width: 113%;
