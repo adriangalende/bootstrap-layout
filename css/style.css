@@ -10,6 +10,10 @@ body{
     border: none;
 }
 
+.bg-white{
+    background-color: #fff;
+}
+
 .btn-primary{
     background-color: #292B35 !important;
     color:#fff;
@@ -47,6 +51,10 @@ body{
 
 .azul-breadcrumbs {
     background-color: #7c88a9;
+}
+
+.texto-azul-breadcrumbs {
+    color: #7c88a9;
 }
 
 .texto-gris-oscuro{
@@ -140,7 +148,9 @@ main {
 }
 
 .card img {
-    max-width: 250px;
+    /*max-width: 250px;*/
+    min-height: 250px;
+    max-height: 252px;
 }
 
 .icono-beneficios{
@@ -209,4 +219,62 @@ footer .cards{
     max-width: 200px;
     margin-left: 40px;
     filter: brightness(0) invert(1);
+}
+
+/*
+    Subcategoria
+ */
+
+.publi-h{
+    width: 99%;
+    background-color: #fff;
+    height: 110px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+#product-title-size-container  {
+    width: 100%;
+}
+
+#filtro-horizontal{
+    justify-content: space-between;
+}
+
+#filtro-horizontal select{
+    padding: 10px;
+    width: 330px;
+}
+
+.paginacion a{
+    background-color: #dddddd;
+    color: #000;
+    padding: 12px;
+    border-radius: 2px;
+    margin: 2px;
+}
+
+.paginacion a:hover, .paginacion a.active{
+    background-color: #7c88a9;
+    color:#fff;
+    cursor: pointer;
+}
+
+.border-radius{
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
+
+.badge-flag{
+    font-size: 16px;
+    padding: 22px;
+}
+
+div.img-responsive{
+    height: 250px;
+    background-size: 100% !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
 }
