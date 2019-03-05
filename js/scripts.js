@@ -9,3 +9,11 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={
 }).addTo(mymap);
 
 var marker = L.marker([39.5688565, 2.6652431]).addTo(mymap);
+
+document.getElementsByClassName('fa-shopping-cart')[0].addEventListener('click',function(){
+    window.location = './carrito.html';
+})
+
+document.getElementsByClassName('fa-shopping-cart')[0].addEventListener('mouseover',function(){
+    $('#modalCarrito').modal('show')
+})

@@ -485,3 +485,7 @@ i.fa-trash:hover{
     cursor: pointer;
     font-size: 1.8em;
 }
+
+.navbar i.fa-shopping-cart {
+    cursor: pointer;
+}
