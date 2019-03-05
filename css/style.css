@@ -5,6 +5,11 @@ body{
     margin-right:120px;
     font-family: Calibri;
 }
+
+.container-fluid{
+    width: 1300px;
+}
+
 .bg-none{
     background: none;
     border: none;
@@ -18,6 +23,10 @@ body{
     background-color: #292B35 !important;
     color:#fff;
     border: none;
+}
+
+.texto-primary{
+    color:#292B35;
 }
 
 .rojo-etiqueta{
@@ -45,6 +54,10 @@ body{
     background-color: #474c55;
 }
 
+.gris-claro{
+    background-color: #bcbcbc;
+}
+
 .gris-oscuro{
     background-color:#272c33;
 }
@@ -57,12 +70,20 @@ body{
     color: #7c88a9;
 }
 
+.texto-azul-secundario{
+    color:#2E3566;
+}
+
 .texto-gris-oscuro{
     color:#272c33 !important;
 }
 
 .texto-gris-claro{
     color:#bcbcbc;
+}
+
+.texto-gris-claro2{
+    color: #e3e3e3;
 }
 
 .texto-estrella {
@@ -278,3 +299,110 @@ div.img-responsive{
     background-position: center !important;
     background-repeat: no-repeat !important;
 }
+
+.canvas-img{
+    width: 300px;
+    height: 300px;
+}
+
+.canvas-img:hover{
+    cursor: pointer;
+}
+
+#contenedor-fab-mod{
+    font-size: 24px;
+    height: 100px;
+}
+
+#contenedor-fab-mod span{
+    color:#000;
+    margin-left: 10px;
+    font-size: 0.9em;
+}
+
+#contenedor-fab-mod p {
+    margin-bottom: -2px;
+}
+
+#contenedor-cant-precio{
+    margin-top: -50px;
+}
+
+#input-cantidad{
+    width: 70px;
+    height: 70px;
+    boder: none;
+    font-size: 3em;
+    text-align: center;
+}
+
+#controlador-cantidad button{
+    font-size: 1.3em;
+}
+
+#producto-precio h1{
+    font-size: 3em;
+}
+
+#contenedor-cant-precio button:hover{
+    cursor: pointer;
+}
+
+#carousel-imagenes-miniatura a{
+    padding: 20px;
+    margin: 4px;
+}
+#carousel-imagenes-miniatura a.control{
+    width:10px !important;
+}
+
+#carousel-imagenes-miniatura a.control:hover{
+    cursor: pointer;
+}
+
+#carousel-imagenes-miniatura a.miniatura-img{
+    -webkit-background-size: contain !important;
+    background-size: contain !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    width: 80px;
+    height: 70px;
+}
+
+#valoraciones-producto{
+    height: 200px;
+}
+
+#valoraciones-header{
+    height: 70px;
+}
+
+#valoraciones-header ul{
+    justify-content: space-around;
+}
+
+#valoraciones-header ul li{
+    margin: 20px;
+    list-style: none;
+    font-size: 1.3em;
+}
+
+#valoraciones-header ul li.active{
+    background-color: rgba(221, 221, 221, 0.23);
+    color:#fff;
+    padding: 20px;
+    margin: 0;
+}
+
+#valoraciones-header ul li:hover{
+    background-color: rgba(221, 221, 221, 0.23);
+    color:#fff;
+    padding: 20px;
+    margin: 0;
+    cursor: pointer;
+}
+
+
+
+
+
