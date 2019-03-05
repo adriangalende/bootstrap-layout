@@ -259,6 +259,10 @@ footer .cards{
     width: 100%;
 }
 
+#filtro-vertical{
+    max-height: 570px;
+}
+
 #filtro-horizontal{
     justify-content: space-between;
 }
@@ -352,6 +356,7 @@ div.img-responsive{
     padding: 20px;
     margin: 4px;
 }
+
 #carousel-imagenes-miniatura a.control{
     width:10px !important;
 }
@@ -402,7 +407,81 @@ div.img-responsive{
     cursor: pointer;
 }
 
+.control-input-carrito input{
+    width: 50px;
+    text-align: center;
+}
+
+.contenedor-control-input button {
+    border: 2px solid #333b66;
+    margin:4px;
+    font-size: 1.3em;
+}
+
+.border-none{
+    border:none !important;
+}
+
+table thead tr{
+    background-color: #cecaca;
+    color: #474c55;
+    border: 1px solid #b1b1b1 !important;
+}
+
+table thead tr th{
+    background-color: #cecaca;
+    color: #474c55;
+    border: 1px solid #b1b1b1 !important;
+}
+
+table tbody tr{
+    background-color: #dddddd;
+    border: 1px solid #b1b1b1 !important;
+}
+
+table tbody tr td{
+    border: 1px solid #b1b1b1 !important;
+    height: 80px;
+}
 
 
+table tbody tr td .miniatura-img {
+    width: 80px;
+    height: 80px;
+    background-size: contain !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+}
 
+.td-cupon{
+    height: 200px;
+}
 
+.td-item-tabla {
+    height: 80px;
+}
+
+#input-codigo-promocional input,  #input-codigo-promocional button{
+    background-color: #dddddd;
+    border: 1px solid #bcbcbc;
+}
+
+.td-fake {
+    width: 100%;
+    border-bottom: 1px solid #b1b1b1;
+    text-align: right;
+    padding: 5px;
+}
+
+.stockbar{
+    height: 80px;
+}
+
+i.fa-trash{
+    font-size: 1.6em;
+}
+
+i.fa-trash:hover{
+    cursor: pointer;
+    font-size: 1.8em;
+}
