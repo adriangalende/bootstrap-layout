@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LOGIN</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/e1a4235157.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body class="gris-oscuro login-body">
+    <div class="container-fluid d-flex justify-content-center align-items-center">
+        <div>
+            <form id="login-form" action="">
+                <h2 class="Lato bg-white texto-azul-breadcrumbs font-weight-bold text-center p-2"> Login </h2>
+                <div id="contenedor-login" class="d-flex azul-breadcrumbs text-white p-4 flex-wrap justify-content-center">
+                    <div class="form-group d-flex flex-wrap">
+                        <label for="usr"><i class="fa fa-user mr-2"></i> Nombre de usuario:</label>
+                        <input placeholder="your username" required type="text" class="form-control" id="usr">
+
+                        <label for="passwd"><i class="fa fa-lock mr-2 mt-4"></i> Contraseña:</label>
+                        <div class="d-flex input-group flex-nowrap">
+                            <input placeholder="****" required type="password" class="form-control" id="passwd">
+                            <i id="mostrar-password" class="fa fa-2x fa-eye texto-gris-oscuro border-radius ml-1 p-1"></i>
+                        </div>
+
+                        <div class="d-flex input-group flex-nowrap align-items-baseline mt-2">
+                            <input  type="checkbox" name="" id="mantenerConectado" class="Lato input-form mr-2">
+                            <label for="mantenerConectado">Mantenerme conectado</label>
+                        </div>
+
+                        <a href="" class="Lato texto-azul-secundario font-weight-bold"><i class="fa fa-question"></i> Olvidé mi contraseña</a>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Entrar</button>
+                    <p id="info-alert" hidden class="alert alert-info w-100 mt-3"></p>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+<script src="js/jquery.min.js"></script>
+<script>
+    window.onload=function(){
+        var user = {}
+        document.forms[0].addEventListener('submit', function(data){
+            data.preventDefault();
+            let usernameList = ['toni','adri','admin'];
+            let passwordList = ['1234toni','1234adri','admin'];
+
+            let username = $('#usr')[0].value;
+            let password = $('#passwd')[0].value;
+
+            let message = $('#info-alert')[0];
+            message.innerText = "";
+
+            if( username != undefined && password != undefined){
+                if(usernameList.includes(username)){
+                    let index = usernameList.indexOf(username);
+                    if(password == passwordList[index]){
+                        location.href = 'index.html'
+                        user.id = username;
+                        sessionStorage.setItem('loginSession',JSON.stringify(user))
+                    } else {
+                        message.innerText = "Usuario o Contraseña incorrectos";
+                        message.classList.remove('alert-info');
+                        message.classList.add('alert-danger');
+                        message.hidden = false;
+                    }
+                } else {
+                    message.innerText = "El usuario no existe";
+                    message.classList.remove('alert-info');
+                    message.classList.add('alert-danger');
+                    message.hidden = false;
+                }
+            }
+        })
+
+        document.getElementById('mostrar-password').addEventListener('mousedown', function(e){
+            this.closest('div').querySelectorAll('#passwd')[0].type = "text";
+        });
+        document.getElementById('mostrar-password').addEventListener('mouseup', function(e){
+            this.closest('div').querySelectorAll('#passwd')[0].type = "password";
+        });
+    }
+
+</script>
+</html>

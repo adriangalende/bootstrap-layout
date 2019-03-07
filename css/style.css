@@ -489,3 +489,25 @@ i.fa-trash:hover{
 .navbar i.fa-shopping-cart {
     cursor: pointer;
 }
+
+.login-body div.container-fluid {
+    min-height: 600px;
+}
+
+/** Login **/
+#login-form {
+    width: 400px;
+}
+
+#mostrar-password:hover {
+    cursor: pointer;
+}
+
+#contenedor-login {
+    position: relative;
+    top: -8px;
+}
+
+.pointer {
+    cursor: pointer;
+}
