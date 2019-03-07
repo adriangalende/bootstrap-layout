@@ -35,15 +35,21 @@
                         <a href="" class="Lato texto-azul-secundario font-weight-bold"><i class="fa fa-question"></i> Olvidé mi contraseña</a>
                     </div>
                     <button type="submit" class="btn btn-primary">Entrar</button>
-                    <p id="info-alert" hidden class="alert alert-info w-100 mt-3"></p>
+                    <p id="info-alert" hidden class="alert alert-info w-100 mt-3" data-toggle="tooltip" title="PRUEBA admin admin"></p>
                 </div>
             </form>
         </div>
     </div>
 </body>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 <script src="js/jquery.min.js"></script>
 <script>
     window.onload=function(){
+
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+
         var user = {}
         document.forms[0].addEventListener('submit', function(data){
             data.preventDefault();
@@ -64,13 +70,13 @@
                         user.id = username;
                         sessionStorage.setItem('loginSession',JSON.stringify(user))
                     } else {
-                        message.innerText = "Usuario o Contraseña incorrectos";
+                        message.innerText = "Usuario o Contraseña incorrectos (pon el ratón encima para pista)";
                         message.classList.remove('alert-info');
                         message.classList.add('alert-danger');
                         message.hidden = false;
                     }
                 } else {
-                    message.innerText = "El usuario no existe";
+                    message.innerText = "El usuario no existe (pon el ratón encima para pista)";
                     message.classList.remove('alert-info');
                     message.classList.add('alert-danger');
                     message.hidden = false;
