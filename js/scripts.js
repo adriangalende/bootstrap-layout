@@ -39,4 +39,14 @@ window.onload = function() {
         userIcon.hidden = true;
     }
 
+    $('#dropdown01').on('mouseenter', function(nav){
+        $('#dropdown01')[0].closest('li').classList.add('show')
+
+    })
+
+
+    $('#dropdown01').on('click', function(nav){
+        location.href = 'gaming.html'
+    })
+
 }
