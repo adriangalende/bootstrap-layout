@@ -14,7 +14,7 @@
 <body class="gris-oscuro login-body">
     <div class="container-fluid d-flex justify-content-center align-items-center">
         <div>
-            <form id="login-form" action="">
+            <form id="login-form border-radius" action="">
                 <h2 class="Lato bg-white texto-azul-breadcrumbs font-weight-bold text-center p-2"> Login </h2>
                 <div id="contenedor-login" class="d-flex azul-breadcrumbs text-white p-4 flex-wrap justify-content-center">
                     <div class="form-group d-flex flex-wrap">
@@ -31,8 +31,10 @@
                             <input  type="checkbox" name="" id="mantenerConectado" class="Lato input-form mr-2">
                             <label for="mantenerConectado">Mantenerme conectado</label>
                         </div>
-
-                        <a href="" class="Lato texto-azul-secundario font-weight-bold"><i class="fa fa-question"></i> Olvidé mi contraseña</a>
+                        <div class="d-flex input-group flex-wrap align-items-baseline mt-2">
+                           <a href="register.html" class="label labe-info Lato texto-azul-secundario font-weight-bold w-100">¿No tienes usuario? A qué esperas ???</a>
+                            <a href="" class="Lato texto-azul-secundario font-weight-bold"><i class="fa fa-question"></i> Olvidé mi contraseña</a>
+                        </div>
                     </div>
                     <button type="submit" class="btn btn-primary">Entrar</button>
                     <p id="info-alert" hidden class="alert alert-info w-100 mt-3" data-toggle="tooltip" title="PRUEBA admin admin"></p>
